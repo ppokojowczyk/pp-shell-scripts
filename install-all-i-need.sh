@@ -12,7 +12,7 @@ wireshark compton xbindkeys meld ssmtp gphoto2 ncftp pastebinit baobab fonts-inc
 PACKAGE_MANAGER_COMMAND='apt-get install'
 
 # Install manually
-# netbeans android-studio soapui node(?) 
+# netbeans android-studio soapui node(?) anydesk
 
 # Execute command
 sudo $PACKAGE_MANAGER_COMMAND $PACKAGES

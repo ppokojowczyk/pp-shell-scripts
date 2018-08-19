@@ -26,7 +26,7 @@ xbindkeys&
 unclutter&
 
 # messangers
-skypeforlinux&
+# skypeforlinux&
 
 # clipboards
 parcellite&
@@ -44,3 +44,8 @@ shutter --min_at_startup&
 # audio player
 audacious&
 
+# bluetooth manager
+blueman-applet &
+
+# nm-applet
+nm-applet

@@ -7,11 +7,11 @@
 # do i need settings from GNOME ?
 #/usr/lib/gnome-settings-daemon/gnome-settings-daemon &
 
-# nice wallpaper
-feh --bg-fill ~/.config/wallpaper.jpg&
-
 # set screens layout
 xrandr --output DVI-1 --off&
+
+# nice wallpaper
+feh --bg-fill ~/.config/wallpaper.jpg &
 
 # default keyboard map
 setxkbmap pl&

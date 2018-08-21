@@ -1,39 +1,40 @@
 #!/bin/bash
 
 #
-# Start these applications :)
+# Start these applications
 #
 
 # do i need settings from GNOME ?
 #/usr/lib/gnome-settings-daemon/gnome-settings-daemon &
 
 # set screens layout
-xrandr --output DVI-1 --off&
+xrandr --output DVI-1 --off &
 
 # nice wallpaper
-feh --bg-fill ~/.config/wallpaper.jpg &
+# feh --bg-fill ~/.config/wallpaper.jpg &
+nitrogen --restore &
 
 # default keyboard map
-setxkbmap pl&
+setxkbmap pl &
 
 # volume manager
-xfce4-volumed&
+xfce4-volumed &
 
 # keys binding manager
-xbindkeys&
+xbindkeys &
 
 # hide mouse cursor
-unclutter&
+unclutter &
 
 # messangers
-# skypeforlinux&
+skypeforlinux &
 
 # clipboards
-parcellite&
-xpad&
+parcellite &
+xpad &
 
 # cloud storage
-dropbox start -i&
+dropbox start -i &
 
 # screenshots
 shutter --min_at_startup&
@@ -42,10 +43,15 @@ shutter --min_at_startup&
 #rofi&
 
 # audio player
-audacious&
+audacious &
 
 # bluetooth manager
 blueman-applet &
 
 # nm-applet
-nm-applet
+nm-applet &
+
+# set up Wacom tablet
+wacom-gimp-hotkeys.sh &
+wacom-disable-touch.sh &
+

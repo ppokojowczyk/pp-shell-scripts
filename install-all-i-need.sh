@@ -5,20 +5,62 @@
 #
 
 # Packages to be installed
-PACKAGES='vsftpd git unrar unace p7zip nfs-common nfs-kernel-server atop redshift whois dnsmasq shutter geeqie python python-pip bluefish gtypist klavaro skypeforlinux bluefish gimp gnome-commander redshift-gtk emma tora parcellite adminer phpmyadmin krusader filezilla codeblocks codelite kdevelop x11vnc rofi vim vim-gtk numix-gtk-theme build-essential autoconf automake pkg-config libgtk-3.0 libgtk-3-dev shimmer-themes ppa-purge composer nodejs npm dia ntp
-wireshark compton xbindkeys meld ssmtp gphoto2 ncftp pastebinit baobab fonts-inconsolata fonts-hack-ttf smartmontools stress glmark2 testdisk audacious audacity krita mypaint inkscape libreoffice mono-complete keepassx qnapi subdownloader subliminal gcolor2 mc xpad terminator xfburn geany simple-scan chromium-browser nautilus-dropbox firefox hexchat pidgin remmina thunderbird transmission smplayer vlc evince conky vagrant virtualbox aptitude xfonts-terminus i3 j4-dmenu-desktop tmux giggle feh
-arandr unclutter glances rxvt-unicode nitrogen sonata mpd ncmpcpp volti xournal blueman xdotool xbacklight spacefm doublecmd-gtk variety'
+PACKAGES=(
 
-PACKAGES_NEW=(
+    # appearance
+    numix-gtk-theme shimmer-themes compton fonts-inconsolata fonts-hack-ttf xfonts-terminus variety
 
-    # audio players
-    sonata mpd ncmpcpp
+    # text processing
+    vim vim-gtk meld geany
 
-    # graphic editors
-    gimp
+    # databases
+    emma tora adminer phpmyadmin
+
+    # communication
+    skypeforlinux hexchat pidgin remmina
+
+    # file system navigation
+    gnome-commander krusader mc spacefm doublecmd-gtk
+
+    # system related
+    nfs-common nfs-kernel-server terminator conky aptitude i3 j4-dmenu-desktop tmux glances rxvt-unicode blueman
+
+    # version control
+    git giggle
+
+    # networking
+    vsftpd whois dnsmasq filezilla ntp wireshark ssmtp ncftp chromium-browser firefox thunderbird transmission
+
+    # audio
+    sonata mpd ncmpcpp audacious audacity sonata mpd ncmpcpp volti
+
+    # video
+    smplayer vlc
+
+    # programming libs
+    libgtk-3.0 libgtk-3-dev python python-pip mono-complete
+
+    # programming
+    bluefish bluefish codeblocks codelite kdevelop build-essential autoconf automake pkg-config composer nodejs npm
+
+    # touch-typing
+    gtypist klavaro
+
+    # graphics
+    gimp geeqie gphoto2 krita mypaint inkscape gcolor2 simple-scan feh
+
+    # archiving
+    unace unrar p7zip
 
     # utils
-    unclutter
+    unclutter atop redshift x11vnc ppa-purge baobab smartmontools stress glmark2 testdisk libreoffice keepassx qnapi subdownloader subliminal xfburn nautilus-dropbox evince
+    arandr nitrogen xdotool xbacklight
+
+    # virtualization
+    vagrant virtualbox
+
+    # productivity
+    shutter redshift-gtk parcellite rofi dia xbindkeys pastebinit xpad unclutter xournal
 
 )
 
@@ -29,5 +71,4 @@ PACKAGE_MANAGER_COMMAND='apt-get install'
 # netbeans android-studio soapui node(?) anydesk eclipse
 
 # Execute command
-sudo $PACKAGE_MANAGER_COMMAND $PACKAGES
-#sudo $PACKAGE_MANAGER_COMMAND "${PACKAGES[@]}"
+sudo $PACKAGE_MANAGER_COMMAND "${PACKAGES[@]}"

@@ -60,8 +60,13 @@ PACKAGES=(
     vagrant virtualbox
 
     # productivity
-    shutter redshift-gtk parcellite rofi dia xbindkeys pastebinit xpad unclutter xournal
+    shutter redshift-gtk rofi dia xbindkeys pastebinit xpad unclutter xournal
 
+    # clipboard manager
+    parcellite
+    #diodon
+    #clipit
+    
 )
 
 # Use this package manager command

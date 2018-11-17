@@ -55,3 +55,9 @@ nm-applet &
 wacom-gimp-hotkeys.sh &
 wacom-disable-touch.sh &
 
+# redshift for eye-strain
+redshift-gtk &
+
+# wallpaper switcher
+# variety &
+

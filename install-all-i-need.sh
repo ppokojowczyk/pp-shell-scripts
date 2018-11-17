@@ -32,7 +32,7 @@ PACKAGES=(
     vsftpd whois dnsmasq filezilla ntp wireshark ssmtp ncftp chromium-browser firefox thunderbird transmission
 
     # audio
-    sonata mpd ncmpcpp audacious audacity sonata mpd ncmpcpp volti
+    clementine audacity volti
 
     # video
     smplayer vlc

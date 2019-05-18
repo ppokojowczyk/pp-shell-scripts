@@ -43,7 +43,7 @@ shutter --min_at_startup&
 #rofi&
 
 # audio player
-audacious &
+clementine &
 
 # bluetooth manager
 blueman-applet &
@@ -60,4 +60,7 @@ redshift-gtk &
 
 # wallpaper switcher
 # variety &
+
+# compositor
+compton &
 

@@ -9,7 +9,7 @@ if [ -z `command -v xsetwacom` ]; then
     exit 0;
 fi
 
-LOOK_FOR='id: ..\ttype: TOUCH';
+LOOK_FOR='id:.*type: TOUCH';
 USE='xsetwacom --set [[DEVICE_ID]] touch off';
 WACOM_DEVICE_ID=`xsetwacom --list devices | awk '/'"$LOOK_FOR"'/ {print $8}'`;
 

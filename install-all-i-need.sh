@@ -8,59 +8,152 @@
 PACKAGES=(
 
     # appearance
-    numix-gtk-theme shimmer-themes compton fonts-inconsolata fonts-hack-ttf xfonts-terminus variety
+    numix-gtk-theme
+    shimmer-themes
+    compton
+    fonts-inconsolata
+    fonts-hack-ttf
+    xfonts-terminus
+    variety
 
     # text processing
-    vim vim-gtk meld geany
+    vim
+    vim-gtk
+    meld
+    geany
 
     # databases
-    emma tora adminer phpmyadmin
+    emma
+    tora
+    adminer
+    phpmyadmin
 
     # communication
-    skypeforlinux hexchat pidgin remmina
+    skypeforlinux
+    hexchat
+    pidgin
+    remmina
 
     # file system navigation
-    gnome-commander krusader mc spacefm doublecmd-gtk
+    # spacefm
+    gnome-commander
+    krusader
+    mc
+    doublecmd-gtk
 
     # system related
-    nfs-common nfs-kernel-server terminator conky aptitude i3 j4-dmenu-desktop tmux glances rxvt-unicode blueman
+    nfs-common
+    nfs-kernel-server
+    terminator
+    conky
+    aptitude
+    i3
+    j4-dmenu-desktop
+    tmux
+    glances
+    rxvt-unicode
+    blueman
 
     # version control
     git giggle
 
     # networking
-    vsftpd whois dnsmasq filezilla ntp wireshark ssmtp ncftp chromium-browser firefox thunderbird transmission
+    vsftpd
+    whois
+    dnsmasq
+    filezilla
+    ntp
+    wireshark
+    ssmtp
+    ncftp
+    chromium-browser
+    firefox
+    thunderbird
+    transmission
 
     # audio
-    clementine audacity volti
+    clementine
+    audacity
+    #volti
 
     # video
     smplayer vlc
 
     # programming libs
-    libgtk-3.0 libgtk-3-dev python python-pip mono-complete
+    libgtk-3.0
+    libgtk-3-dev
+    python
+    python-pip
+    mono-complete
 
     # programming
-    bluefish bluefish codeblocks codelite kdevelop build-essential autoconf automake pkg-config composer nodejs npm
+    bluefish
+    codeblocks
+    codelite
+    kdevelop
+    build-essential
+    autoconf
+    automake
+    pkg-config
+    composer
+    nodejs
+    npm
 
     # touch-typing
     gtypist klavaro
 
     # graphics
-    gimp geeqie gphoto2 krita mypaint inkscape gcolor2 simple-scan feh
+    gimp
+    geeqie
+    gphoto2
+    krita
+    mypaint
+    inkscape
+    #gcolor2
+    simple-scan
+    feh
 
     # archiving
     unace unrar p7zip
 
     # utils
-    unclutter atop redshift x11vnc ppa-purge baobab smartmontools stress glmark2 testdisk libreoffice keepassx qnapi subdownloader subliminal xfburn nautilus-dropbox evince
-    arandr nitrogen xdotool xbacklight
+    unclutter
+    atop
+    redshift
+    x11vnc
+    ppa-purge
+    baobab
+    smartmontools
+    stress
+    glmark2
+    testdisk
+    libreoffice
+    keepassx
+    qnapi
+    subdownloader
+    subliminal
+    xfburn
+    nautilus-dropbox
+    evince
+    arandr
+    nitrogen
+    xdotool
+    xbacklight
 
     # virtualization
-    vagrant virtualbox
+    vagrant
+    virtualbox
 
     # productivity
-    shutter redshift-gtk rofi dia xbindkeys pastebinit xpad unclutter xournal
+    shutter
+    redshift-gtk
+    rofi
+    dia
+    xbindkeys
+    pastebinit
+    xpad
+    unclutter
+    xournal
 
     # clipboard manager
     parcellite
@@ -73,7 +166,13 @@ PACKAGES=(
 PACKAGE_MANAGER_COMMAND='apt-get install'
 
 # These packages I have to install manually
-# netbeans android-studio soapui node(?) anydesk eclipse
+# netbeans
+# android-studio
+# soapui
+# node
+# anydesk
+# eclipse
 
 # Execute command
 sudo $PACKAGE_MANAGER_COMMAND "${PACKAGES[@]}"
+

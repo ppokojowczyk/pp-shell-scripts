@@ -117,7 +117,7 @@ PACKAGES=(
     unace unrar p7zip
 
     # utils
-    unclutter
+    #unclutter
     atop
     redshift
     x11vnc
@@ -152,7 +152,6 @@ PACKAGES=(
     xbindkeys
     pastebinit
     xpad
-    unclutter
     xournal
 
     # clipboard manager

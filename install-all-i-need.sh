@@ -114,6 +114,7 @@ PACKAGES=(
     mypaint
     inkscape
     #gcolor2
+    gpick
     simple-scan
     feh
 

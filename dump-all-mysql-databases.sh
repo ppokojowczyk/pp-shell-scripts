@@ -19,7 +19,7 @@ do
     DATE=`date +%Y_%m_%d_%H_%M_%S`
     FILENAME=$DB"__"$DATE"_dump.sql"
     echo -e "--- Dumping \033[0;31m$DB\033[0;m --> $FILENAME"
-    mysqldump -u$DB_USER -p$DB_PASS $DB --routines=true --triggers=true | gzip -9 >> $FILENAME.gz
+    mysqldump -u$DB_USER -p$DB_PASS $DB --routines=true --triggers=true --events=true | gzip -9 >> $FILENAME.gz
 done
 
 echo ""

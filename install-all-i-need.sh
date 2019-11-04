@@ -25,7 +25,7 @@ PACKAGES=(
     # databases
     emma
     adminer
-    phpmyadmin
+    #phpmyadmin
 
     # TORA database manager
     tora
@@ -100,8 +100,8 @@ PACKAGES=(
     automake
     pkg-config
     composer
-    nodejs
-    npm
+    #nodejs
+    #npm
 
     # touch-typing
     gtypist klavaro

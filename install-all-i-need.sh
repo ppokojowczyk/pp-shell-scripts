@@ -59,7 +59,9 @@ PACKAGES=(
     blueman
 
     # version control
-    git giggle
+    git
+    giggle
+    gitk
 
     # networking
     vsftpd
@@ -99,7 +101,7 @@ PACKAGES=(
     autoconf
     automake
     pkg-config
-    composer
+    #composer
     #nodejs
     #npm
 

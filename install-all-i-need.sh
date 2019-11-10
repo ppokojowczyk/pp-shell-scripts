@@ -57,6 +57,7 @@ PACKAGES=(
     glances
     rxvt-unicode
     blueman
+    zsh
 
     # version control
     git

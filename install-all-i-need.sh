@@ -147,6 +147,7 @@ PACKAGES=(
     nitrogen
     xdotool
     xbacklight
+    gparted
 
     # virtualization
     vagrant

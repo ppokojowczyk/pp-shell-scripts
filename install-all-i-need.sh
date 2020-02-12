@@ -59,7 +59,9 @@ PACKAGES=(
     blueman
 
     # version control
-    git giggle
+    git
+    giggle
+    gitk
 
     # networking
     vsftpd

@@ -58,6 +58,7 @@ PACKAGES=(
     rxvt-unicode
     blueman
     zsh
+    extlinux
 
     # version control
     git
@@ -132,6 +133,7 @@ PACKAGES=(
     ppa-purge
     baobab
     smartmontools
+    gsmartcontrol
     stress
     glmark2
     testdisk

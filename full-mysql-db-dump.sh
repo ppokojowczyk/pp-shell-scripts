@@ -21,6 +21,7 @@ echo "DUMP"
 mysqldump -u$DB_USER -p$DB_PASS $DB \
 --routines=true \
 --triggers=true \
+--events=true \
 | gzip -9 >> $FILENAME.gz
 
 echo "DONE"

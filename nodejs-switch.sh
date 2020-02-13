@@ -6,6 +6,12 @@ DIR_PREFIX="node-v"
 VERSION=$1
 if [[ -z $VERSION ]]; then
     echo "No version defined."
+    echo ""
+    echo "Available versions:"
+    for n in `ls -1 $NODE_DIR|grep $DIR_PREFIX`
+    do
+        echo " - "$n
+    done
     exit;
 fi
 echo Switching to version $VERSION.

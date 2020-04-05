@@ -14,7 +14,6 @@ PACKAGES=(
     fonts-inconsolata
     fonts-hack-ttf
     xfonts-terminus
-    variety
 
     # text processing
     vim

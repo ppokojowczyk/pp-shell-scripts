@@ -8,9 +8,9 @@
 PACKAGES=(
 
     # appearance
-    numix-gtk-theme
-    shimmer-themes
-    compton
+    #numix-gtk-theme
+    #shimmer-themes
+    #compton
     fonts-inconsolata
     fonts-hack-ttf
     xfonts-terminus
@@ -20,16 +20,22 @@ PACKAGES=(
     vim-gtk
     meld
     geany
+    #atom
+    #sublime-text
 
     # databases
-    emma
-    adminer
+    #emma
+    #adminer
     #phpmyadmin
 
     # TORA database manager
-    tora
+    #tora
     # to make tora database providers work
-    libqt4-sql-mysql libqt4-sql-psql libqt4-sql-sqlite libqt4-sql-odbc libqt4-sql-tds
+    #libqt4-sql-mysql
+    #libqt4-sql-psql
+    #libqt4-sql-sqlite
+    #libqt4-sql-odbc
+    #libqt4-sql-tds
 
     # communication
     skypeforlinux
@@ -39,8 +45,8 @@ PACKAGES=(
 
     # file system navigation
     # spacefm
-    gnome-commander
-    krusader
+    #gnome-commander
+    #krusader
     mc
     doublecmd-gtk
 
@@ -48,10 +54,10 @@ PACKAGES=(
     nfs-common
     nfs-kernel-server
     terminator
-    conky
-    aptitude
-    i3
-    j4-dmenu-desktop
+    #conky
+    #aptitude
+    #i3
+    #j4-dmenu-desktop
     tmux
     glances
     rxvt-unicode
@@ -75,7 +81,7 @@ PACKAGES=(
     ncftp
     chromium-browser
     firefox
-    thunderbird
+    #thunderbird
     transmission
 
     # audio
@@ -84,20 +90,21 @@ PACKAGES=(
     #volti
 
     # video
-    smplayer vlc
+    smplayer
+    vlc
 
     # programming libs
-    libgtk-3.0
-    libgtk-3-dev
+    #libgtk-3.0
+    #libgtk-3-dev
     python
-    python-pip
-    mono-complete
+    #python-pip
+    #mono-complete
 
     # programming
-    bluefish
-    codeblocks
-    codelite
-    kdevelop
+    #bluefish
+    #codeblocks
+    #codelite
+    #kdevelop
     build-essential
     autoconf
     automake
@@ -107,14 +114,15 @@ PACKAGES=(
     #npm
 
     # touch-typing
-    gtypist klavaro
+    #gtypist
+    #klavaro
 
     # graphics
     gimp
     geeqie
     gphoto2
     krita
-    mypaint
+    #mypaint
     inkscape
     #gcolor2
     gpick
@@ -122,53 +130,65 @@ PACKAGES=(
     feh
 
     # archiving
-    unace unrar p7zip
+    unace
+    unrar
+    p7zip
 
     # utils
     #unclutter
-    atop
+    #atop
     redshift
-    x11vnc
-    ppa-purge
-    baobab
-    smartmontools
-    gsmartcontrol
-    stress
-    glmark2
+    #x11vnc
+    #ppa-purge
+    #baobab
+    #smartmontools
+    #gsmartcontrol
+    #stress
+    #glmark2
     testdisk
     libreoffice
     keepassx
     qnapi
-    subdownloader
-    subliminal
+    #subdownloader
+    #subliminal
     xfburn
     nautilus-dropbox
     evince
     arandr
-    nitrogen
-    xdotool
-    xbacklight
+    #nitrogen
+    #xdotool
+    #xbacklight
     gparted
 
     # virtualization
     vagrant
     virtualbox
 
+    # Screenshots
+    #shutter # Doesn't exist in repo anymore.
+    flameshot
+
     # productivity
-    shutter
     redshift-gtk
-    rofi
+    #rofi
     dia
-    xbindkeys
-    pastebinit
-    xpad
-    xournal
+    #xbindkeys
+    #pastebinit
+    #xpad
+    #xournal
 
     # clipboard manager
     parcellite
     #diodon
     #clipit
-    
+
+    # fun-stuff
+    dosbox
+    scummvm
+
+    # docker
+    docker.io
+ 
 )
 
 # Use this package manager command

@@ -88,6 +88,8 @@ PACKAGES=(
     clementine
     audacity
     #volti
+    #cmus
+    #moc
 
     # video
     smplayer
@@ -185,6 +187,7 @@ PACKAGES=(
     # fun-stuff
     dosbox
     scummvm
+    # zsnes
 
     # docker
     docker.io
@@ -194,13 +197,19 @@ PACKAGES=(
 # Use this package manager command
 PACKAGE_MANAGER_COMMAND='apt-get install'
 
-# These packages I have to install manually
+#
+# These packages I have to install manually:
+#
 # netbeans
 # android-studio
 # soapui
 # node
 # anydesk
 # eclipse
+# postman
+# dbeaver
+# slack
+# teamviewer
 
 # Execute command
 sudo $PACKAGE_MANAGER_COMMAND "${PACKAGES[@]}"

@@ -191,6 +191,9 @@ PACKAGES=(
 
     # docker
     docker.io
+
+    # email
+    swaks
  
 )
 
@@ -214,3 +217,8 @@ PACKAGE_MANAGER_COMMAND='apt-get install'
 # Execute command
 sudo $PACKAGE_MANAGER_COMMAND "${PACKAGES[@]}"
 
+# Install enpass.
+./install-enpass.sh
+
+# Install Slack.
+./install-slack.sh

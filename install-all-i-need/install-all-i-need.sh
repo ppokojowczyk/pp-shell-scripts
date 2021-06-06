@@ -1,12 +1,10 @@
 #!/bin/bash
-
 #
-# Script installs all software I need
+# Script installs all software I need.
 #
 
-# Packages to be installed
+# Packages to be installed.
 PACKAGES=(
-
     # appearance
     #numix-gtk-theme
     #shimmer-themes
@@ -194,31 +192,40 @@ PACKAGES=(
 
     # email
     swaks
- 
 )
 
-# Use this package manager command
+# Use this package manager command.
 PACKAGE_MANAGER_COMMAND='apt-get install'
 
-#
-# These packages I have to install manually:
-#
-# netbeans
-# android-studio
-# soapui
-# node
-# anydesk
-# eclipse
-# postman
-# dbeaver
-# slack
-# teamviewer
-
-# Execute command
+# Install packages.
 sudo $PACKAGE_MANAGER_COMMAND "${PACKAGES[@]}"
 
-# Install enpass.
+# enpass.
 ./install-enpass.sh
 
-# Install Slack.
+# Slack.
 ./install-slack.sh
+
+# Visual Studio Code.
+./install-visual-studio-code.sh
+
+# TeamViewer.
+./install-teamviewer.sh
+
+# DBeaver.
+./install-dbeaver.sh
+
+# Postman.
+./install-postman.sh
+
+# AnyDesk.
+./install-anydesk.sh
+
+# SoapUI.
+./install-soapui.sh
+
+# NetBeans.
+./install-netbeans.sh
+
+# Android Studio.
+./install-android-studio.sh

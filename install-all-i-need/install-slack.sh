@@ -4,13 +4,13 @@ then
     PKG_FILENAME=$(basename $SLACK_PKG_URL)
     if [ ! -z "$PKG_FILENAME" ]
     then
-        echo "\e[32mInstalling Slack from $SLACK_PKG_URL.\e[0m"
+        echo -e "\e[32mInstalling Slack from $SLACK_PKG_URL.\e[0m"
         wget $SLACK_PKG_URL
         sudo dpkg --install $PKG_FILENAME
         rm -f $PKG_FILENAME
     else
-        echo "\e[31m(!) Invalid package filename.\e[0m"
+        echo -e "\e[31m(!) Invalid package filename.\e[0m"
     fi
 else
-    echo "\e[31m(!) Failed to retrieve Slack package URL.\e[0m"
+    echo -e "\e[31m(!) Failed to retrieve Slack package URL.\e[0m"
 fi

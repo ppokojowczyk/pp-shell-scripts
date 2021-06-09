@@ -1,3 +1,4 @@
+#!/bin/bash
 SLACK_PKG_URL=$(wget -qO - https://slack.com/intl/en-pl/downloads/instructions/ubuntu | egrep -o 'https?://downloads.slack-edge.com/linux_releases/slack-desktop[^ "]+' | head -n 1 | tr -d "\n")
 if [ ! -z $SLACK_PKG_URL ]
 then

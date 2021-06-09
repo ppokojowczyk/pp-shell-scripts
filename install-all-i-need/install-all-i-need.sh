@@ -3,38 +3,12 @@
 # Script installs all software I need.
 #
 
+# Use this package manager command.
+PACKAGE_MANAGER_COMMAND='apt-get install'
+PACKAGE_MANAGER_UPDATE='apt-get update'
+
 # Packages to be installed.
 PACKAGES=(
-    # appearance
-    #numix-gtk-theme
-    #shimmer-themes
-    #compton
-    fonts-inconsolata
-    fonts-hack-ttf
-    xfonts-terminus
-
-    # text processing
-    vim
-    vim-gtk
-    meld
-    geany
-    #atom
-    #sublime-text
-
-    # databases
-    #emma
-    #adminer
-    #phpmyadmin
-
-    # TORA database manager
-    #tora
-    # to make tora database providers work
-    #libqt4-sql-mysql
-    #libqt4-sql-psql
-    #libqt4-sql-sqlite
-    #libqt4-sql-odbc
-    #libqt4-sql-tds
-
     # communication
     skypeforlinux
     hexchat
@@ -77,7 +51,7 @@ PACKAGES=(
     wireshark
     ssmtp
     ncftp
-    chromium-browser
+    #chromium-browser
     firefox
     #thunderbird
     transmission
@@ -182,11 +156,6 @@ PACKAGES=(
     #diodon
     #clipit
 
-    # fun-stuff
-    dosbox
-    scummvm
-    # zsnes
-
     # docker
     docker.io
 
@@ -194,11 +163,40 @@ PACKAGES=(
     swaks
 )
 
-# Use this package manager command.
-PACKAGE_MANAGER_COMMAND='apt-get install'
+TEXT_PROCESSING=(
+  atom
+  vim
+  vim-gtk
+  meld
+  geany
+  #sublime-text
+)
+
+APPEARANCE=(
+    adapta-gtk-theme
+    arc-theme
+    #numix-gtk-theme
+    #shimmer-themes
+    #compton
+    fonts-inconsolata
+    fonts-hack-ttf
+    xfonts-terminus
+)
+
+FUN=(
+    dosbox
+    scummvm
+    # zsnes
+)
+
+# Update repositories.
+sudo $PACKAGE_MANAGER_UPDATE
 
 # Install packages.
-sudo $PACKAGE_MANAGER_COMMAND "${PACKAGES[@]}"
+sudo $PACKAGE_MANAGER_COMMAND "${PACKAGES[@]}" "${TEXT_PROCESSING[@]}" "${APPEARANCE[@]}" "${FUN[@]}"
+
+# Google Chrome.
+./install-google-chrome.sh
 
 # enpass.
 ./install-enpass.sh

@@ -3,6 +3,9 @@
 # Script installs all software I need.
 #
 
+# Always end on errors.
+set -e
+
 # Use this package manager command.
 PACKAGE_MANAGER_COMMAND='apt-get install'
 PACKAGE_MANAGER_UPDATE='apt-get update'
@@ -135,8 +138,8 @@ PACKAGES=(
     gparted
 
     # virtualization
-    vagrant
-    virtualbox
+    #vagrant
+    #virtualbox
 
     # Screenshots
     #shutter # Doesn't exist in repo anymore.
@@ -147,9 +150,9 @@ PACKAGES=(
     #rofi
     dia
     #xbindkeys
-    #pastebinit
-    #xpad
-    #xournal
+    pastebinit
+    xpad
+    xournal
 
     # clipboard manager
     parcellite
@@ -189,11 +192,22 @@ FUN=(
     # zsnes
 )
 
+CLI_TOOLS=(
+    inotify-tools
+)
+
+UTILS=(
+    xserver-xorg-input-synaptics
+)
+
 # Update repositories.
 sudo $PACKAGE_MANAGER_UPDATE
 
 # Install packages.
-sudo $PACKAGE_MANAGER_COMMAND "${PACKAGES[@]}" "${TEXT_PROCESSING[@]}" "${APPEARANCE[@]}" "${FUN[@]}"
+sudo $PACKAGE_MANAGER_COMMAND "${PACKAGES[@]}" "${TEXT_PROCESSING[@]}" "${APPEARANCE[@]}" "${FUN[@]}" "${CLI_TOOLS[@]}" "${UTILS[@]}"
+
+# Ask about installing additional software.
+exit 0;
 
 # Google Chrome.
 ./install-google-chrome.sh

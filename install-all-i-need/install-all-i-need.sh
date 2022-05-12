@@ -200,11 +200,15 @@ UTILS=(
     xserver-xorg-input-synaptics
 )
 
+FONTS=(
+    unifont
+)
+
 # Update repositories.
 sudo $PACKAGE_MANAGER_UPDATE
 
 # Install packages.
-sudo $PACKAGE_MANAGER_COMMAND "${PACKAGES[@]}" "${TEXT_PROCESSING[@]}" "${APPEARANCE[@]}" "${FUN[@]}" "${CLI_TOOLS[@]}" "${UTILS[@]}"
+sudo $PACKAGE_MANAGER_COMMAND "${PACKAGES[@]}" "${TEXT_PROCESSING[@]}" "${APPEARANCE[@]}" "${FUN[@]}" "${CLI_TOOLS[@]}" "${UTILS[@]}" "${FONTS[@]}"
 
 # Ask about installing additional software.
 exit 0;

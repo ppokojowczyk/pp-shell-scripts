@@ -3,7 +3,7 @@
 # Download subtitles for all video files in current dir.
 #
 
-SUBTITLE_LANG='pl';
+SUBTITLE_LANG='en';
 
 while getopts "p:" opt; do
     case "$opt" in
@@ -28,7 +28,6 @@ case $SUBTITLE_PROVIDER in
 esac
 
 VIDEO_FILE_RE='mp4|avi|mkv';
-SUBTITLE_LANG='pl';
 SUBTITLE_PROVIDER='qnapi';
 SUBTITLES_RE='[txt|srt|sub]$'
 FILES=`ls -1 | grep -iE $VIDEO_FILE_RE`;

@@ -4,7 +4,7 @@ PREV_IFS=$IFS
 IFS=""
 
 showEncoding () {
-  echo `file -i $1 | awk -F" " '{ print $3 }'`
+  echo `file -i $1 | awk -F";" '{ print $2 }'`
 }
 
 TEMP_FILE=$1__temp

@@ -136,6 +136,7 @@ PACKAGES=(
     #xdotool
     #xbacklight
     gparted
+    neofetch
 
     # virtualization
     #vagrant

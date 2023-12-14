@@ -52,6 +52,7 @@ PACKAGES=(
     filezilla
     ntp
     wireshark
+    kismet
     ssmtp
     ncftp
     #chromium-browser

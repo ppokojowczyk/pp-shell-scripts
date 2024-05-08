@@ -44,6 +44,8 @@ PACKAGES=(
     git
     giggle
     gitk
+    gitg
+    git-cola
 
     # networking
     vsftpd
@@ -52,7 +54,7 @@ PACKAGES=(
     filezilla
     ntp
     wireshark
-    kismet
+    #kismet
     ssmtp
     ncftp
     #chromium-browser
@@ -74,7 +76,7 @@ PACKAGES=(
     # programming libs
     #libgtk-3.0
     #libgtk-3-dev
-    python
+    python3
     #python-pip
     #mono-complete
 
@@ -163,13 +165,14 @@ PACKAGES=(
 
     # docker
     docker.io
+    docker-compose-v2
 
     # email
     swaks
 )
 
 TEXT_PROCESSING=(
-  atom
+  #atom
   vim
   vim-gtk
   meld

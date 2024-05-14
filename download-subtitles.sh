@@ -3,7 +3,12 @@
 # Download subtitles for all video files in current dir.
 #
 
-SUBTITLE_LANG='en';
+SUBTITLE_LANG=$1;
+
+if [ -z $SUBTITLE_LANG ]; then
+    echo "Missing language argument."
+    exit 1
+fi
 
 while getopts "p:" opt; do
     case "$opt" in

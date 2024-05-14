@@ -140,6 +140,7 @@ PACKAGES=(
     #xbacklight
     gparted
     neofetch
+    lolcat
 
     # virtualization
     #vagrant

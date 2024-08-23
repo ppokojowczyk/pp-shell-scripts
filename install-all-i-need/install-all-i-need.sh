@@ -141,6 +141,7 @@ PACKAGES=(
     gparted
     neofetch
     lolcat
+    lynis
 
     # virtualization
     #vagrant

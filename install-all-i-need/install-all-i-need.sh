@@ -147,9 +147,11 @@ PACKAGES=(
     #vagrant
     #virtualbox
 
-    # Screenshots
-    #shutter # Doesn't exist in repo anymore.
+    # Screenshots / screencasts
+    shutter
     flameshot
+    kazam
+    peek
 
     # productivity
     redshift-gtk

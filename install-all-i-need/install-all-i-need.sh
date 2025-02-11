@@ -11,169 +11,6 @@ PACKAGE_MANAGER_COMMAND='apt-get install'
 PACKAGE_MANAGER_UPDATE='apt-get update'
 
 # Packages to be installed.
-PACKAGES=(
-    # communication
-    skypeforlinux
-    hexchat
-    pidgin
-    remmina
-
-    # file system navigation
-    # spacefm
-    #gnome-commander
-    #krusader
-    mc
-    doublecmd-gtk
-
-    # system related
-    nfs-common
-    nfs-kernel-server
-    terminator
-    #conky
-    #aptitude
-    #i3
-    #j4-dmenu-desktop
-    tmux
-    glances
-    rxvt-unicode
-    blueman
-    zsh
-    extlinux
-
-    # version control
-    git
-    giggle
-    gitk
-    gitg
-    git-cola
-
-    # networking
-    vsftpd
-    whois
-    dnsmasq
-    filezilla
-    ntp
-    wireshark
-    #kismet
-    ssmtp
-    ncftp
-    #chromium-browser
-    firefox
-    #thunderbird
-    transmission
-
-    # audio
-    clementine
-    audacity
-    #volti
-    #cmus
-    #moc
-
-    # video
-    smplayer
-    vlc
-
-    # programming libs
-    #libgtk-3.0
-    #libgtk-3-dev
-    python3
-    #python-pip
-    #mono-complete
-
-    # programming
-    #bluefish
-    #codeblocks
-    #codelite
-    #kdevelop
-    build-essential
-    autoconf
-    automake
-    pkg-config
-    #composer
-    #nodejs
-    #npm
-
-    # touch-typing
-    #gtypist
-    #klavaro
-
-    # graphics
-    gimp
-    geeqie
-    gphoto2
-    krita
-    #mypaint
-    inkscape
-    #gcolor2
-    gpick
-    simple-scan
-    feh
-
-    # archiving
-    unace
-    unrar
-    p7zip
-
-    # utils
-    #unclutter
-    #atop
-    redshift
-    #x11vnc
-    #ppa-purge
-    #baobab
-    #smartmontools
-    #gsmartcontrol
-    #stress
-    #glmark2
-    testdisk
-    libreoffice
-    keepassx
-    qnapi
-    #subdownloader
-    #subliminal
-    xfburn
-    nautilus-dropbox
-    evince
-    arandr
-    #nitrogen
-    #xdotool
-    #xbacklight
-    gparted
-    neofetch
-    lolcat
-    lynis
-
-    # virtualization
-    #vagrant
-    #virtualbox
-
-    # Screenshots / screencasts
-    shutter
-    flameshot
-    kazam
-    peek
-
-    # productivity
-    redshift-gtk
-    #rofi
-    dia
-    #xbindkeys
-    pastebinit
-    xpad
-    xournal
-
-    # clipboard manager
-    parcellite
-    #diodon
-    #clipit
-
-    # docker
-    docker.io
-    docker-compose-v2
-
-    # email
-    swaks
-)
 
 TEXT_PROCESSING=(
   #atom
@@ -213,11 +50,235 @@ FONTS=(
     unifont
 )
 
+MUSIC=(
+    fasttracker2
+    milkytracker
+    goattracker
+    schism
+)
+
+PROGRAMMING=(
+    #bluefish
+    #codeblocks
+    #codelite
+    #kdevelop
+    build-essential
+    autoconf
+    automake
+    pkg-config
+    #composer
+    #nodejs
+    #npm
+)
+
+VERSION_CONTROL=(
+    git
+    giggle
+    gitk
+    gitg
+    git-cola
+)
+
+COMMUNICATION=(
+    # communication
+    skypeforlinux
+    hexchat
+    pidgin
+    remmina
+)
+
+FS_NAVIGATION=(
+    # file system navigation
+    # spacefm
+    #gnome-commander
+    #krusader
+    mc
+    doublecmd-gtk
+)
+
+SYSTEM_RELATED=(
+    nfs-common
+    nfs-kernel-server
+    terminator
+    #conky
+    #aptitude
+    #i3
+    #j4-dmenu-desktop
+    tmux
+    glances
+    rxvt-unicode
+    blueman
+    zsh
+    extlinux
+)
+
+NETWORKING=(
+    vsftpd
+    whois
+    dnsmasq
+    filezilla
+    ntp
+    wireshark
+    #kismet
+    ssmtp
+    ncftp
+    #chromium-browser
+    firefox
+    #thunderbird
+    transmission
+)
+
+AUDIO=(
+    clementine
+    audacity
+    #volti
+    #cmus
+    #moc
+)
+
+VIDEO=(
+    smplayer
+    vlc
+)
+
+PROGRAMMING_LIBS=(
+    #libgtk-3.0
+    #libgtk-3-dev
+    python3
+    #python-pip
+    #mono-complete
+)
+
+TOUCH_TYPING=(
+    #gtypist
+    #klavaro
+)
+
+GRAPHICS=(
+    gimp
+    geeqie
+    gphoto2
+    krita
+    #mypaint
+    inkscape
+    #gcolor2
+    gpick
+    simple-scan
+    feh
+)
+
+ARCHIVING=(
+    unace
+    unrar
+    p7zip
+)
+
+UTILS=(
+    #unclutter
+    #atop
+    redshift
+    #x11vnc
+    #ppa-purge
+    #baobab
+    #smartmontools
+    #gsmartcontrol
+    #stress
+    #glmark2
+    testdisk
+    libreoffice
+    keepassx
+    qnapi
+    #subdownloader
+    #subliminal
+    xfburn
+    nautilus-dropbox
+    evince
+    arandr
+    #nitrogen
+    #xdotool
+    #xbacklight
+    gparted
+    neofetch
+    lolcat
+    lynis
+)
+
+VIRTUALIZATION=(
+    #vagrant
+    #virtualbox
+)
+
+SCREEN_CAPTURE=(
+    shutter
+    flameshot
+    kazam
+    peek
+)
+
+PRODUCTIVITY=(
+    redshift-gtk
+    #rofi
+    dia
+    #xbindkeys
+    pastebinit
+    xpad
+    xournal
+)
+
+CLIPBOARD=(
+    parcellite
+    #diodon
+    #clipit
+)
+
+DOCKER=(
+    docker.io
+    docker-compose-v2
+)
+
+EMAIL=(
+    swaks
+)
+
+MATH=(
+    # math
+    octave
+    #sagemath
+)
+
 # Update repositories.
 sudo $PACKAGE_MANAGER_UPDATE
 
 # Install packages.
-sudo $PACKAGE_MANAGER_COMMAND "${PACKAGES[@]}" "${TEXT_PROCESSING[@]}" "${APPEARANCE[@]}" "${FUN[@]}" "${CLI_TOOLS[@]}" "${UTILS[@]}" "${FONTS[@]}"
+sudo $PACKAGE_MANAGER_COMMAND \
+    "${PACKAGES[@]}" \
+    "${TEXT_PROCESSING[@]}" \
+    "${APPEARANCE[@]}" \
+    "${FUN[@]}" \
+    "${CLI_TOOLS[@]}" \
+    "${UTILS[@]}" \
+    "${FONTS[@]}" \
+    "${MUSIC[@]}"
+    "${PROGRAMMING[@]}" \
+    "${VERSION_CONTROL[@]}" \
+    "${COMMUNICATION[@]}" \
+    "${FS_NAVIGATION[@]}" \
+    "${SYSTEM_RELATED[@]}" \
+    "${NETWORKING[@]}" \
+    "${AUDIO[@]}" \
+    "${VIDEO[@]}" \
+    "${PROGRAMMING_LIBS[@]}" \
+    "${TOUCH_TYPING[@]}" \
+    "${GRAPHICS[@]}" \
+    "${ARCHIVING[@]}" \
+    "${UTILS[@]}" \
+    "${VIRTUALIZATION[@]}" \
+    "${SCREEN_CAPTURE[@]}" \
+    "${PRODUCTIVITY[@]}" \
+    "${CLIPBOARD[@]}" \
+    "${DOCKER[@]}" \
+    "${EMAIL[@]}" \
+    "${MATH[@]}"
 
 # Ask about installing additional software.
 exit 0;
@@ -254,3 +315,4 @@ exit 0;
 
 # Android Studio.
 ./install-android-studio.sh
+

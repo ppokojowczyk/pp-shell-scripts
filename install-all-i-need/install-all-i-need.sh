@@ -18,6 +18,7 @@ TEXT_PROCESSING=(
   vim-gtk
   meld
   geany
+  emacs
   #sublime-text
 )
 
@@ -36,6 +37,12 @@ FUN=(
     dosbox
     scummvm
     # zsnes
+    nestopia
+    mednaffe
+    pcsxr
+    scid
+    stockfish
+    #dwarf-fortress
 )
 
 CLI_TOOLS=(
@@ -54,7 +61,11 @@ MUSIC=(
     fasttracker2
     milkytracker
     goattracker
+    hivelytracker
+    bambootracker
     schism
+    zytrax
+    tutka
 )
 
 PROGRAMMING=(
@@ -131,6 +142,7 @@ NETWORKING=(
 AUDIO=(
     clementine
     audacity
+    audacious
     #volti
     #cmus
     #moc
@@ -159,12 +171,13 @@ GRAPHICS=(
     geeqie
     gphoto2
     krita
-    #mypaint
+    mypaint
     inkscape
-    #gcolor2
+    gcolor3
     gpick
     simple-scan
     feh
+    # firealpaca
 )
 
 ARCHIVING=(
@@ -205,7 +218,9 @@ UTILS=(
 
 VIRTUALIZATION=(
     #vagrant
-    #virtualbox
+    virtualbox
+    virtualbox-dkms
+    virtualbox-ext-pack
 )
 
 SCREEN_CAPTURE=(

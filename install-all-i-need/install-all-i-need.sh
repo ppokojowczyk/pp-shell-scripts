@@ -19,6 +19,7 @@ TEXT_PROCESSING=(
   meld
   geany
   emacs
+  neovim
   #sublime-text
 )
 

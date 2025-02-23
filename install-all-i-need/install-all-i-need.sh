@@ -18,6 +18,7 @@ TEXT_PROCESSING=(
   vim-gtk
   meld
   geany
+  geany-plugin-markdown
   emacs
   neovim
   #sublime-text

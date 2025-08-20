@@ -49,6 +49,8 @@ FUN=(
 
 CLI_TOOLS=(
     inotify-tools
+    cdw
+    wodim
 )
 
 UTILS=(

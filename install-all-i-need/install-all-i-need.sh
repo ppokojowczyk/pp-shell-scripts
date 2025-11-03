@@ -95,7 +95,6 @@ VERSION_CONTROL=(
 )
 
 COMMUNICATION=(
-    # communication
     skypeforlinux
     hexchat
     pidgin
@@ -103,7 +102,6 @@ COMMUNICATION=(
 )
 
 FS_NAVIGATION=(
-    # file system navigation
     # spacefm
     #gnome-commander
     #krusader

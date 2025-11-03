@@ -109,6 +109,7 @@ FS_NAVIGATION=(
     #krusader
     mc
     doublecmd-gtk
+    ranger
 )
 
 SYSTEM_RELATED=(

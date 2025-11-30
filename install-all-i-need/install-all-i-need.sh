@@ -20,7 +20,7 @@ TEXT_PROCESSING=(
   geany
   geany-plugin-markdown
   emacs
-  neovim
+  #neovim
   #sublime-text
 )
 

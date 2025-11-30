@@ -126,6 +126,11 @@ SYSTEM_RELATED=(
     extlinux
 )
 
+I3WM=(
+    i3
+    i3blocks
+)
+
 NETWORKING=(
     vsftpd
     whois
@@ -282,6 +287,7 @@ sudo $PACKAGE_MANAGER_COMMAND \
     "${COMMUNICATION[@]}" \
     "${FS_NAVIGATION[@]}" \
     "${SYSTEM_RELATED[@]}" \
+    "${I3WM[@]}" \
     "${NETWORKING[@]}" \
     "${AUDIO[@]}" \
     "${VIDEO[@]}" \

@@ -70,6 +70,7 @@ MUSIC=(
     schism
     zytrax
     tutka
+    lingot
 )
 
 PROGRAMMING=(

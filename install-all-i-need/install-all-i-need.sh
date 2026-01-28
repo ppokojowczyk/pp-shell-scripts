@@ -155,6 +155,7 @@ AUDIO=(
     #volti
     #cmus
     #moc
+    sox
 )
 
 VIDEO=(

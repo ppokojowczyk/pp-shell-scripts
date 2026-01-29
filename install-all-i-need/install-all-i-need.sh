@@ -55,6 +55,7 @@ CLI_TOOLS=(
 
 UTILS=(
     xserver-xorg-input-synaptics
+    lxappearance
 )
 
 FONTS=(

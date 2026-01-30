@@ -249,6 +249,7 @@ PRODUCTIVITY=(
     pastebinit
     xpad
     xournal
+    zim
 )
 
 CLIPBOARD=(

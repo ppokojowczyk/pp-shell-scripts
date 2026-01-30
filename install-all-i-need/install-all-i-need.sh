@@ -173,7 +173,7 @@ PROGRAMMING_LIBS=(
 )
 
 TOUCH_TYPING=(
-    #gtypist
+    gtypist
     #klavaro
 )
 

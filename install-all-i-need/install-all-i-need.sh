@@ -90,6 +90,7 @@ PROGRAMMING=(
 
 VERSION_CONTROL=(
     git
+    gh
     giggle
     gitk
     gitg

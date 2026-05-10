@@ -55,7 +55,7 @@ warn "Removing $COUNT files:"
 
 for F in "${TO_REMOVE[@]}"; do
     echo "  - removing $F"
-    #rm -f "$F"
+    rm -f "$F"
 done
 
 echo -e "\nDone.\n"

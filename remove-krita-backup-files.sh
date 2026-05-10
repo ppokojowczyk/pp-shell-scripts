@@ -31,7 +31,7 @@ fi
 COUNT=${#TO_REMOVE[@]} 
 
 if (( $COUNT == 0 )); then
-    echo -e "Nothing to do.\n"
+    echo -e "\nNothing to do.\n"
     exit 0
 fi
 

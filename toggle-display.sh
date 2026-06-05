@@ -47,9 +47,18 @@ if [[ -z $NEW_DISPLAY ]]; then
     exit 1
 fi
 
+XRANDR_OPTS=""
+
+if [[ $NEW_DISPLAY == 'DP-1' ]]; then
+    XRANDR_OPTS="--mode 2560x1440"
+else
+    XRANDR_OPTS="--mode 1920x1080"
+fi
+
+
 notify "Enabling $NEW_DISPLAY"
 xrandr --output $CURRENT_DISPLAY --off
-xrandr --output $NEW_DISPLAY --auto
+xrandr --output $NEW_DISPLAY --auto $XRANDR_OPTS
 
 # DPI.
 

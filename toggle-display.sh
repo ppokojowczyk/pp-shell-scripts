@@ -57,8 +57,10 @@ fi
 
 
 notify "Enabling $NEW_DISPLAY"
-xrandr --output $CURRENT_DISPLAY --off
 xrandr --output $NEW_DISPLAY --auto $XRANDR_OPTS
+sleep 1
+xrandr --output $CURRENT_DISPLAY --off
+sleep 1
 
 # DPI.
 
@@ -76,7 +78,7 @@ if [ $XDG_SESSION_DESKTOP == 'i3' ]; then
     echo "Xft.dpi: $NEW_DPI" | xrdb -override -
 
     notify "New DPI: $NEW_DPI"
-    sleep 2
+    sleep 4
     nitrogen --restore # Restore the desktop wallpaper as it can be rendered incorrectly.
 fi
 

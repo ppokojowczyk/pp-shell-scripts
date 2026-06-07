@@ -218,6 +218,7 @@ UTILS=(
     xfburn
     nautilus-dropbox
     evince
+    zathura
     arandr
     #nitrogen
     #xdotool

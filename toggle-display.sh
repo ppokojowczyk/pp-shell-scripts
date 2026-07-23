@@ -3,8 +3,14 @@
 DEFAULT_DPI=96
 NEW_DISPLAY=""
 NEW_DPI=$DEFAULT_DPI
-#LARGER_DPI=144
+NORMAL_RESOLUTION="1920x1080"
+LARGER_RESOLUTION="3840x2160"
+NEW_RESOLUTION=""
 LARGER_DPI=192
+SCALE=""
+NORMAL_SCALE="1x1"
+LARGER_SCALE="0.75x0.75"
+#LARGER_DPI=144
 ALL_DISPLAYS=($(xrandr | awk '/ connected/{print $1}'))
 CURRENT_DISPLAY=$(xrandr | awk '/ connected/ && /[[:digit:]]x[[:digit:]].*+/{print $1}')
 DEFAULT_DISPLAY=""
@@ -13,14 +19,6 @@ notify () {
     notify-send -t 10000 "$1"
 }
 
-#CURRENT_DISPLAY="HDMI7"
-#ALL_DISPLAYS=(
-#    DP1
-#    CRT2
-#    HDMI7
-#    DP34
-#    CRT-01
-#);
 CT=0
 
 # Find next display.
@@ -50,22 +48,27 @@ fi
 XRANDR_OPTS=""
 
 if [[ $NEW_DISPLAY == 'DP-1' ]]; then
-    XRANDR_OPTS="--mode 2560x1440"
+    NEW_RESOLUTION=$LARGER_RESOLUTION
+    SCALE=$LARGER_SCALE
 else
-    XRANDR_OPTS="--mode 1920x1080"
+    NEW_RESOLUTION=$NORMAL_RESOLUTION
+    SCALE=$NORMAL_SCALE
 fi
 
+XRANDR_OPTS="--mode $NEW_RESOLUTION"
 
-notify "Enabling $NEW_DISPLAY"
-xrandr --output $NEW_DISPLAY --auto $XRANDR_OPTS
+notify "Enabling $NEW_DISPLAY @ $NEW_RESOLUTION (scale: $SCALE)"
+xrandr --output $NEW_DISPLAY --auto $XRANDR_OPTS --scale $SCALE
 sleep 1
 xrandr --output $CURRENT_DISPLAY --off
+
+# Do not change DPI.
+exit 0
+
+# Change DPI.
 sleep 1
-
-# DPI.
-
 if [ $XDG_SESSION_DESKTOP == 'i3' ]; then
-    X_RES=$(xrandr | awk '/ connected/ && /[[:digit:]]x[[:digit:]].*+/{print $4}' | sed 's/\([[:digit:]]*\).*/\1/')
+    X_RES=$(xrandr | awk '/\*/ {split($1,a,"x"); print a[1]}')
 
     if [[ -z $X_RES ]]; then
         notify "Can't determine new X resolution."
